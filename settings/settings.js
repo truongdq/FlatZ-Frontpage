@@ -1,5 +1,5 @@
 // Settings
-$.domoticzurl = "http://192.168.1.88:8080";//domoticz url (can be with username:password@ip:port)
+$.domoticzurl = "http://192.168.11.2:8084";//domoticz url (can be with username:password@ip:port)
 $.degreesUnit = " C";
 $.percentUnit = " %";
 $.theme = "main.css"; //possible values: 'main.css', 'mainPurple.css', 'mainLight.css'
@@ -8,8 +8,8 @@ $.rss = "http://www.nu.nl/rss/Algemeen"; //rss feed, like: http://feeds.bbci.co.
 $.enableSwitchPopup = true; //false or true
 
 //Weather settings
-$.location = "Krommenie, NH"; //city and region *required 
-$.country = "Netherlands"; //country *required 
+$.location = "Ikoma, Nara"; //city and region *required
+$.country = "Japan"; //country *required
 $.units = "metric"; //"metric" or "imperial" default: "auto"
 
 
@@ -28,28 +28,28 @@ $.Camera = false; //false or true
 $.Traffic = true; //false or true
 
 
-// Dashboard screen User settings >>> 
+// Dashboard screen User settings >>>
 // format: idx, value (from json), replace label, description, chart label, chart color
 $.PageDashboardArray = [
     //switches
-    ['163', 'Data', 'cell1', 'Lampen Uit', 'onbutton'],//onbutton = only push on
+    ['15', 'Data', 'cell1', 'Truong smartphone', 'onbutton'],//onbutton = only push on
     ['161', 'Data', 'cell2', 'Theme Logan', 'onbutton'],//button is normal on/off button
     ['159', 'Data', 'cell3', 'Theme X-Men', 'onbutton'],
     ['162', 'Data', 'cell4', 'Theme Aurora', 'onbutton'],
     ['160', 'Data', 'cell5', 'Theme TitanFall', 'onbutton'],
     ['158', 'Data', 'cell6', 'Theme SunSet', 'onbutton'],
-    
+
 	// example for scenes & groups
 	//['1', 'Status', 'cell111', 'Group Example', 'group'],
 	//['1', 'Status', 'cell111', 'Scene Example', 'scene'],
-	
-	
-    //other devices
-    ['68', 'Humidity', 'cell7', 'Vocht Badkamer', 'badkamer', '#b2c831'],
-    ['68', 'LastUpdate', 'cell70', 'Vocht Badkamer'],
 
-    ['14', 'Temp', 'cell8', 'Temperatuur Woonkamer', 'woonkamer', '#2980B9'],
-    ['14', 'LastUpdate', 'cell80', 'Temperatuur Woonkamer'],
+
+    //other devices
+    ['12', 'Speed', 'cell7', 'Wind at Ikoma', 'badkamer', '#b2c831'],
+    ['12', 'LastUpdate', 'cell70', 'Wind at Ikoma'],
+
+    ['11', 'Temp', 'cell8', 'Temperature at Ikoma', 'woonkamer', '#2980B9'],
+    ['11', 'LastUpdate', 'cell80', 'Temperature at Ikoma'],
 
     ['58', 'Usage', 'cell9', 'Zonnepanelen (Watt)'],
     ['58', 'Data', 'cell29', 'Zonnepanelen'],
@@ -65,7 +65,7 @@ $.PageDashboardArray = [
 ];
 
 
-// Switches Sidebar User settings >>> 
+// Switches Sidebar User settings >>>
 // format: idx, value (from json), replace label, description, chart label, chart color
 $.PageSwitchArray = [
     //switches (left sidebar)
@@ -75,7 +75,7 @@ $.PageSwitchArray = [
     ['162', 'Data', 'cell4', 'Theme Aurora', 'onbutton'],
     ['160', 'Data', 'cell5', 'Theme TitanFall', 'onbutton'],
     ['158', 'Data', 'cell6', 'Theme SunSet', 'onbutton'],
-	
+
 	// example for scenes & groups
 	//['1', 'Status', 'cell111', 'Group Example', 'group'],
 	//['1', 'Status', 'cell111', 'Scene Example', 'scene'],
@@ -92,7 +92,7 @@ $.GraphTemperatureArray = [
 ];
 
 
-// Light screen User settings >>> 
+// Light screen User settings >>>
 $.LightArray = [
     //format: idx, 'Hue' (color lamp) or 'Dimmer' (for normal dimmer), replace label, description, maxdimlevel
     ['113', 'Hue', 'cell7', 'Tafel 1'],
@@ -104,7 +104,7 @@ $.LightArray = [
 ];
 
 
-// Camera screen User settings >>> 
+// Camera screen User settings >>>
 $.CameraArray = [
     //format: html replace label, camera Image URL, description
     ['cell7', 'http://images.opentopia.com/cams/9694/big.jpg', 'Buiten 1'],
